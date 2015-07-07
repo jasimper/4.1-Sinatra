@@ -1,0 +1,103 @@
+.header__background {
+  top: 0;
+  bottom: 0;
+  height: 260px;
+  background-image: url('./images/nestle.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  @media screen and (min-width: 800px) {
+  height: 300px;
+}
+}
+.header__overlay {
+  background: rgba(23, 107, 175, .7);
+  text-align: center;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  > h1 {
+    color: $text_light;
+    font: $header_font;
+    font-size: 2em;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 10px;
+    @media screen and (min-width: 800px) {
+      padding-top:120px;
+      font-size: 3em;
+    }
+  }
+  > p {
+    font-size: .8em;
+    margin: 5px;
+    color: #042C46;
+    font-weight: bold;
+    @media screen and (min-width: 800px) {
+      font-size: .6em;
+    }
+  }
+}
+nav {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  @media screen and (min-width: 800px) {
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    margin-right: 10%;
+    width: 180px;
+    text-align: right;
+  }
+}
+.header__nav {
+  list-style: none;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-left: 0;
+  @media screen and (min-width: 800px) {
+    margin-top: 0;
+  }
+  > li {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 1.5em;
+    color: #042C46;
+    @media screen and (min-width: 800px) {
+      font-size: 1em;
+    }
+  }
+  > li > a {
+    color: inherit;
+    text-decoration: none;
+  }
+  > li > a:hover {
+    color: #CCCCCC;
+    border-bottom: solid 2px #CCCCCC;
+  }
+}
+.header__logo {
+  padding-bottom: 10px;
+  font-size: 0;
+  @media screen and (min-width: 800px) {
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    margin-top: 10px;
+    margin-left: 10%;
+    width: 240px;
+    color: #042C46;
+    font-size: .75em;
+    // line-height: 30px;
+    > img {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: -10px;
+      left: 0;
+    }
+  }
+}
