@@ -1,0 +1,49 @@
+.ad {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  margin: 20px auto 5px auto;
+  width: 100%;
+}
+.ad__image {
+  display: block;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 800px) {
+    max-width: 200px;
+  }
+}
+.ad__body {
+  background: rgba(23, 107, 175, .5);
+  opacity: 1;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  width: 280px;
+  min-height:100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  @media screen and (min-width: 800px) {
+    max-width: 200px;
+  }
+}
+.ad__body:hover {
+  opacity: 0;
+}
+.ad__link {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  text-align: right;
+  > a {
+    color: lighten( $text_dark, 40%);
+    font-size: .8em;
+  }
+  @media screen and (min-width: 800px) {
+    max-width: 200px;
+  }
+}
